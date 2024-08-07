@@ -1,10 +1,10 @@
 <<<<<<< HEAD
-# El3asfora_Portfolio
-This Is El3asfora Portfolio AP
+# Lora
+This Is Simple Social Media App Same What'sapp For Contact With Society
 =======
-# El3asfora
+# Lora
 
-This Is Portfolio Website For Me - _ . > as A Full Stack Web Developer ♥
+This Is Simple MERN Social Media App Same What'sapp  - _ . > For Contact With Society ♥
 
 Follow This Steps To Run My App:
 
