@@ -1,0 +1,132 @@
+.auth-page {
+  height: 100vh;
+}
+
+.auth-page header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 200px;
+  width: 100%;
+  background-color: var(--font-color);
+  color: var(--font-primary-color);
+  border-radius: 0 0;
+  border-bottom-right-radius: 210px 180px;
+  border-bottom-left-radius: 200px 0;
+  font-size: 22px;
+  font-style: italic;
+  font-family: var(--font-logo-family);
+  user-select: none;
+}
+
+.auth-page header::before {
+  position: absolute;
+  content: "";
+  background-color: var(--font-secondary-color);
+  top: 15px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 0 0;
+  border-bottom-right-radius: 210px 160px;
+  border-bottom-left-radius: 220px 0;
+}
+
+.auth-page header h1 {
+  position: relative;
+  top: 20px;
+  margin: 0;
+}
+
+.auth-page section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 35px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 50px;
+  font-weight: 800;
+  border: 1px solid;
+  border-color: #eee transparent #eee transparent;
+  padding-block: 40px;
+  border-radius: 50px 50px 0 0;
+  border-bottom-right-radius: 20px 10px;
+  border-bottom-left-radius: 20px 10px;
+}
+
+.auth-page section p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--font-color);
+  font-size: 24px;
+  background: -webkit-linear-gradient(var(--font-color), #5d5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-page section p:last-child {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.auth-page section div {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.auth-page section div a {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.auth-page section div a:first-child {
+  color: var(--font-secondary-color) !important;
+  transition: 0.3s all ease;
+  border: 1px solid var(--font-secondary-color);
+}
+
+.auth-page section div a:first-child:hover {
+  color: var(--font-secondary-color) !important;
+  border: 1px solid;
+  border-bottom-right-radius: 20px 30px;
+  border-top-left-radius: 20px 30px;
+  border-color: transparent var(--font-secondary-color) transparent
+    var(--font-secondary-color);
+  padding-inline: 15px;
+}
+
+.auth-page section div a:last-child {
+  color: var(--font-primary-color) !important;
+  background-color: var(--font-color);
+  transition: 0.3s all ease;
+}
+
+.auth-page section div a:last-child:hover {
+  color: var(--font-color) !important;
+  border: 1px solid;
+  background-color: transparent;
+  border-bottom-right-radius: 20px 30px;
+  border-top-left-radius: 20px 30px;
+  border-color: transparent var(--font-color) transparent var(--font-color);
+  padding-inline: 15px;
+}
+
+.auth-page footer {
+  position: fixed;
+  white-space: nowrap;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.auth-page footer span {
+  opacity: 0.2;
+}

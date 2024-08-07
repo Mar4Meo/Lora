@@ -1,0 +1,85 @@
+:root {
+  --bg-color: #fafafa;
+  --font-color: #518ce3;
+  --font-logo-family: "Averia Serif Libre", sans-serif;
+  --font-primary-color: #fff;
+  --font-secondary-color: #9d8fef;
+  --no-active-color: rgba(0, 0, 0, 50%);
+  --nav-li-bgColor: #f5f5f5;
+  --border-color: rgba(0, 0, 0, 5%);
+  --search-input-bgColor: #f8f8f8;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border-right: 5px solid #bbb;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--font-color) !important;
+  text-decoration: none !important;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media print {
+  .container {
+    padding: 0;
+    margin: 0w;
+  }
+
+  .container-tog.cont {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container-tog.base {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

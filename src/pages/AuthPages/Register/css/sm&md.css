@@ -1,0 +1,36 @@
+@media (min-width: 100px) and (max-width: 992px) {
+  .register-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .register-page form input {
+    padding-block: 10px;
+    padding-inline: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    opacity: 0.9;
+  }
+
+  .register-page form input::placeholder {
+    opacity: 0.5;
+  }
+
+  .register-page form div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .register-page form button {
+    width: 90%;
+  }
+
+  .register-page form div span a {
+    font-size: 13px;
+  }
+
+}

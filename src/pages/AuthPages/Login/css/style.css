@@ -1,0 +1,117 @@
+.login-page header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 200px;
+  width: 100%;
+  background-color: var(--font-color);
+  color: var(--font-primary-color);
+  border-radius: 0 0;
+  border-bottom-right-radius: 210px 180px;
+  border-bottom-left-radius: 200px 0;
+  font-size: 22px;
+  font-style: italic;
+  font-family: var(--font-logo-family);
+  user-select: none;
+}
+
+.login-page header::before {
+  position: absolute;
+  content: "";
+  background-color: var(--font-secondary-color);
+  top: 15px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 0 0;
+  border-bottom-right-radius: 210px 160px;
+  border-bottom-left-radius: 220px 0;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.login-page form h1 {
+  font-weight: bold;
+  background: -webkit-linear-gradient(var(--font-secondary-color), var(--font-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-page form input {
+  color: #404040;
+    border: 1px solid #eee;
+    padding-block: 10px;
+    padding-inline: 10px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.login-page form input:focus {
+  border: 1px solid #c5c5c5;
+  outline: none;
+}
+
+.login-page form input::placeholder {
+    opacity: 0.6;
+    font-size: 13px;
+}
+
+.login-page form input.success {
+  box-shadow: 0 2px #198754;
+}
+
+.login-page form input.fail {
+  box-shadow: 0 2px #dc3545;
+}
+
+.login-page form button {
+  background-color: var(--font-color);
+  color: var(--font-primary-color);
+  border: 0;
+  border-radius: 10px;
+  padding-block: 10px;
+  width: 30%;
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.login-page form div {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 5px;
+}
+
+.login-page form div span a {
+  color: #000 !important;
+  opacity: 0.7;
+}
+
+.login-page form div span {
+  opacity: 0.3;
+}
+
+.login-page footer {
+  position: fixed;
+  white-space: nowrap;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.login-page footer span {
+  opacity: 0.2;
+  user-select: none;
+}
